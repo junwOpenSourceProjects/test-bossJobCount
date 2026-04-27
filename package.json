@@ -79,7 +79,9 @@
       "@nestjs/core": "^11.1.17",
       "path-to-regexp": "^8.4.0",
       "picomatch": "^4.0.4",
-      "uuid": "^9.0.0"
+      "uuid": "^9.0.0",
+      "follow-redirects": "^1.16.0",
+      "axios": "^1.15.2"
     }
   }
 }
