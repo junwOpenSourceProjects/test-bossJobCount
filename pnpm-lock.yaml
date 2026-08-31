@@ -14,31 +14,32 @@ overrides:
   uuid: ^9.0.0
   follow-redirects: ^1.16.0
   axios: ^1.15.2
+  glob@<10.5.0: 10.5.0
 
 importers:
 
   .:
     dependencies:
       '@nestjs/common':
-        specifier: ^11.2.3
+        specifier: ^11.1.17
         version: 11.2.3(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/core':
-        specifier: ^11.2.3
+        specifier: ^11.1.18
         version: 11.2.3(@nestjs/common@11.2.3(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.2.3)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/mapped-types':
-        specifier: ^2.1.1
+        specifier: ^2.1.0
         version: 2.1.1(@nestjs/common@11.2.3(reflect-metadata@0.2.2)(rxjs@7.8.2))(reflect-metadata@0.2.2)
       '@nestjs/platform-express':
-        specifier: ^11.2.3
+        specifier: ^11.1.17
         version: 11.2.3(@nestjs/common@11.2.3(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.2.3)
       '@nestjs/typeorm':
-        specifier: ^11.0.3
+        specifier: ^11.0.0
         version: 11.0.3(@nestjs/common@11.2.3(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.2.3)(reflect-metadata@0.2.2)(rxjs@7.8.2)(typeorm@0.3.31(mysql2@3.24.2(@types/node@25.9.5))(ts-node@10.9.2(@types/node@25.9.5)(typescript@5.9.3)))
       mysql2:
-        specifier: ^3.24.2
+        specifier: ^3.20.0
         version: 3.24.2(@types/node@25.9.5)
       puppeteer:
-        specifier: ^24.43.1
+        specifier: ^24.40.0
         version: 24.43.1(typescript@5.9.3)
       reflect-metadata:
         specifier: ^0.2.2
@@ -47,17 +48,17 @@ importers:
         specifier: ^7.8.2
         version: 7.8.2
       typeorm:
-        specifier: ^0.3.31
+        specifier: ^0.3.28
         version: 0.3.31(mysql2@3.24.2(@types/node@25.9.5))(ts-node@10.9.2(@types/node@25.9.5)(typescript@5.9.3))
     devDependencies:
       '@nestjs/cli':
-        specifier: ^11.0.24
+        specifier: ^11.0.16
         version: 11.0.24(@types/node@25.9.5)(prettier@3.9.6)
       '@nestjs/schematics':
-        specifier: ^11.1.0
+        specifier: ^11.0.9
         version: 11.1.0(chokidar@4.0.3)(prettier@3.9.6)(typescript@5.9.3)
       '@nestjs/testing':
-        specifier: ^11.2.3
+        specifier: ^11.1.17
         version: 11.2.3(@nestjs/common@11.2.3(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.2.3)(@nestjs/platform-express@11.2.3)
       '@types/express':
         specifier: ^5.0.6
@@ -66,31 +67,31 @@ importers:
         specifier: ^30.0.0
         version: 30.0.0
       '@types/node':
-        specifier: ^25.9.5
+        specifier: ^25.5.0
         version: 25.9.5
       '@types/supertest':
-        specifier: ^7.2.1
+        specifier: ^7.2.0
         version: 7.2.1
       '@typescript-eslint/eslint-plugin':
-        specifier: ^8.68.0
+        specifier: ^8.57.2
         version: 8.68.0(@typescript-eslint/parser@8.68.0(eslint@10.9.1)(typescript@5.9.3))(eslint@10.9.1)(typescript@5.9.3)
       '@typescript-eslint/parser':
-        specifier: ^8.68.0
+        specifier: ^8.57.2
         version: 8.68.0(eslint@10.9.1)(typescript@5.9.3)
       eslint:
-        specifier: ^10.9.1
+        specifier: ^10.2.1
         version: 10.9.1
       eslint-config-prettier:
         specifier: ^10.1.8
         version: 10.1.8(eslint@10.9.1)
       eslint-plugin-prettier:
-        specifier: ^5.5.6
+        specifier: ^5.5.5
         version: 5.5.6(@types/eslint@9.6.1)(eslint-config-prettier@10.1.8(eslint@10.9.1))(eslint@10.9.1)(prettier@3.9.6)
       jest:
-        specifier: ^30.5.0
+        specifier: ^30.3.0
         version: 30.5.0(@types/node@25.9.5)(ts-node@10.9.2(@types/node@25.9.5)(typescript@5.9.3))
       prettier:
-        specifier: ^3.9.6
+        specifier: ^3.8.1
         version: 3.9.6
       source-map-support:
         specifier: ^0.5.21
@@ -99,10 +100,10 @@ importers:
         specifier: ^7.2.2
         version: 7.2.2
       ts-jest:
-        specifier: ^29.4.12
+        specifier: ^29.4.6
         version: 29.4.12(@babel/core@7.29.7)(@jest/transform@30.5.0)(@jest/types@30.5.0)(babel-jest@30.5.0(@babel/core@7.29.7))(jest-util@30.5.0)(jest@30.5.0(@types/node@25.9.5)(ts-node@10.9.2(@types/node@25.9.5)(typescript@5.9.3)))(typescript@5.9.3)
       ts-loader:
-        specifier: ^9.6.2
+        specifier: ^9.5.4
         version: 9.6.2(typescript@5.9.3)(webpack@5.106.2)
       ts-node:
         specifier: ^10.9.2
@@ -111,7 +112,7 @@ importers:
         specifier: ^4.2.0
         version: 4.2.0
       typescript:
-        specifier: ^5.9.3
+        specifier: ^5.8.3
         version: 5.9.3
 
 packages:
@@ -2067,10 +2068,6 @@ packages:
   glob-to-regexp@0.4.1:
     resolution: {integrity: sha512-lkX1HJXwyMcprw/5YUZc2s7DrpAiHB21/V+E1rHUrVNokkvB6bqMzT0VfV6/86ZNabt1k14YOIaT7nDvOX3Iiw==}
 
-  glob@10.4.5:
-    resolution: {integrity: sha512-7Bv8RF0k6xjo7d4A/PxYLbUCfb6c+Vpd2/mB2yRDlew7Jb5hEXiCD9ibfO7wpk8i4sevK6DFny9h7EYbM3/sHg==}
-    hasBin: true
-
   glob@10.5.0:
     resolution: {integrity: sha512-DfXN8DfhJ7NH3Oe7cFmu3NCu1wKbkReJ8TorzSAFbSKrlNaQSKfIzqYqVY8zlbs2NLBbWpRiU52GX2PbaBVNkg==}
     deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
@@ -3332,6 +3329,7 @@ packages:
 
   uuid@9.0.1:
     resolution: {integrity: sha512-b+1eJOlsR9K8HJpow9Ok3fiWOWSIcIzXodvv0rQjVoOVNpWMpxf1wZNpt4y9h10odCNrqnYp1OBzRktckBe3sA==}
+    deprecated: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
     hasBin: true
 
   v8-compile-cache-lib@3.0.1:
@@ -5607,15 +5605,6 @@ snapshots:
 
   glob-to-regexp@0.4.1: {}
 
-  glob@10.4.5:
-    dependencies:
-      foreground-child: 3.3.1
-      jackspeak: 3.4.3
-      minimatch: 9.0.9
-      minipass: 7.1.3
-      package-json-from-dist: 1.0.1
-      path-scurry: 1.11.1
-
   glob@10.5.0:
     dependencies:
       foreground-child: 3.3.1
@@ -6833,7 +6822,7 @@ snapshots:
   test-exclude@7.0.2:
     dependencies:
       '@istanbuljs/schema': 0.1.6
-      glob: 10.4.5
+      glob: 10.5.0
       minimatch: 10.2.6
 
   text-decoder@1.2.7:
