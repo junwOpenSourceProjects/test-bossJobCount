@@ -15,6 +15,7 @@ overrides:
   follow-redirects: ^1.16.0
   axios: ^1.15.2
   glob@<10.5.0: 10.5.0
+  uuid@<11.1.1: 11.1.1
 
 importers:
 
